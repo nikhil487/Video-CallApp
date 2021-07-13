@@ -6,7 +6,7 @@ const myPeer = new Peer(undefined, {
     path: '/peerjs'
   })
 var roomname = prompt("Enter Room Name You want to join");
-var userName = prompt("Enter your name");
+
 var myVideo;
 var output = document.getElementById("output");
 var vd = document.getElementById("user");
@@ -21,6 +21,8 @@ if(roomname == "")
     alert("Room name not entered");
 }
 else 
+{
+var userName = prompt("Enter your name");
 if (userName == "") {
     alert("Name not entered");
 }
@@ -125,4 +127,5 @@ else {
         window.location.href = "about:blank";
         window.close();
     })
+}
 }
